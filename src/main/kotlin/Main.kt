@@ -17,9 +17,7 @@ fun information(name:String,age:Int,country:String):String{
 }
 //Write a function that takes in a String and returns its length
 fun getStringLength(inputString: String): Int {
-    return inputString.length
-}
-//Write a function that takes in a name and prints out “That’s me!” when
+    return inputString.lengthremotea nts out “That’s me!” when
 // your name is passed to it, otherwise,
 // it prints out “I don’t know who that is”
 fun identifyMe(name: String) {
@@ -37,12 +35,12 @@ fun replaceVowelsWith(str: String): String {
     var result = ""
 
     for (c in str) {
-        if (c.toLowerCase() in vowels) {
+        if (c in vowels) {
             result += "*"
         } else {
             result += c
         }
     }
 
-    return result
+    return "Input: $str Output: $result"
 }
